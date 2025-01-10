@@ -9,7 +9,7 @@ name = name.strip()
 name = name.title()
 #retirar espaços e a primeira letra da entrada é maiuscula
 cidade = cidade.strip().capitalize()
-
+#separa as palavras que tem espaço
 first, last = name.split(" ")
 """
 ISSO TAMBEM E UM COMENTARIO
@@ -19,4 +19,5 @@ ISSO TAMBEM E UM COMENTARIO
 #end= o que vai acontecer ao final.
 print ("ola",name,"vimos que tens",idade,'anos e mora na cidade de',cidade, sep=(" "), end=("\n"))
 #outro meio de colocar variaveis, é necessario colocar {} e "f" no inicio da linha. (não se pode usar sep and end.)
+#usamos o firts para escrever somente a primeira palavra da entrada.
 print (f"ola {first} vimos que tens {idade} anos e mora na cidade de {cidade}")
